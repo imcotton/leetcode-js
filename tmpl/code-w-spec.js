@@ -27,6 +27,12 @@ Object.assign(exports, {
 
 
 
+exports.iteration = {
+    default: exports,
+};
+
+
+
 
 
 if (typeof module !== 'undefined' && 'exports' in module) {
