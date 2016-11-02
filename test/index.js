@@ -24,17 +24,18 @@ file.readdirSync(vars.specs)
     .forEach(name => {
         const def = require(path.resolve(vars.specs, name));
 
-        const { title, skips, only = false } = def;
-        const { cases = [], iteration = {default: def} } = def;
+        const { title, cases = [], iteration = {default: def} } = def;
+        const { skip, only = false } = def;
 
-        const skiping = skips === true || cases.length < 2;
+        const skiping = cases.length < 2 || skip === true;
+        const run = only === true ? it.only : it;
 
         describe(title, function () {
-            if (skiping) { return it.skip('skipped'); }
+            if (skiping) { return run('skipped'); }
 
             for (let [name, func] of Object.entries(iteration)) {
 
-                (only === true ? it.only : it)(`- ${ name }`, function () {
+                run(`- ${ name }`, function () {
                     return Promise.resolve().then(_ => {
                         for (let i = 0; i < cases.length; i += 2) {
                             eql(

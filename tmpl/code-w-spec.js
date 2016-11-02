@@ -20,16 +20,25 @@ Object.assign(exports, {
 
         [4, 6],     10,
     ],
-
-
-    skips: typeof TBD !== 'undefined',
 });
 
 
 
 exports.iteration = {
+
     default: exports,
 };
+
+
+
+Object.assign(exports, {
+
+    // run current test only
+    only: false,
+
+    // to skip currnet test
+    skip: typeof TBD !== 'undefined',
+});
 
 
 
