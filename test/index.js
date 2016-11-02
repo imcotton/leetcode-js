@@ -24,7 +24,7 @@ file.readdirSync(vars.specs)
     .forEach(name => {
         const def = require(path.resolve(vars.specs, name));
 
-        const { skips, title } = def;
+        const { title, skips, only = false } = def;
         const { cases = [], iteration = {default: def} } = def;
 
         const skiping = skips === true || cases.length < 2;
@@ -34,7 +34,7 @@ file.readdirSync(vars.specs)
 
             for (let [name, func] of Object.entries(iteration)) {
 
-                it(`- ${ name }`, function () {
+                (only === true ? it.only : it)(`- ${ name }`, function () {
                     return Promise.resolve().then(_ => {
                         for (let i = 0; i < cases.length; i += 2) {
                             eql(
