@@ -1,0 +1,34 @@
+
+language: node_js
+
+
+node_js:
+    - '6'
+    - '7'
+
+
+install:
+    - npm install -q
+
+
+script:
+    - npm test
+
+
+branches:
+    except:
+        - gh-pages
+
+
+git:
+    depth: 1
+
+
+cache:
+    directories:
+        - node_modules
+
+
+dist: trusty
+sudo: false
+
