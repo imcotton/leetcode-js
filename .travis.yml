@@ -21,7 +21,7 @@ branches:
 
 
 git:
-    depth: 1
+    depth: 9
 
 
 cache:
