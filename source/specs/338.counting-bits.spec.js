@@ -3,6 +3,10 @@
 // https://leetcode.com/problems/counting-bits/
 
 
+/**
+ * @param {number} num
+ * @return {number[]}
+ */
 var countBits = exports = function (num = 0) {
     const list = [0];
 
@@ -30,7 +34,8 @@ Object.assign(exports, {
 
 exports.iteration = {
 
-    'to strings': function (num = 0) {
+    'to strings':
+    function (num = 0) {
         const list = [];
         const hash = {0: 0, 1: 1};
 
@@ -47,7 +52,8 @@ exports.iteration = {
         return list;
     },
 
-    'shift counting': function (num = 0) {
+    'shift counting':
+    function (num = 0) {
         const list = [];
         const hash = {0: 0, 1: 1};
 
@@ -78,7 +84,8 @@ exports.iteration = {
         return list;
     },
 
-    'reuse previous': function (num = 0) {
+    'reuse previous':
+    function (num = 0) {
         const list = [0];
 
         for (let i = 0; i <= num; i++) {

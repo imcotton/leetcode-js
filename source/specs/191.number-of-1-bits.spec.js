@@ -3,6 +3,10 @@
 // https://leetcode.com/problems/number-of-1-bits/
 
 
+/**
+ * @param {number} n - a positive integer
+ * @return {number}
+ */
 var hammingWeight = exports = function (n = 0, sum = 0) {
 
     while (n) {
@@ -36,11 +40,13 @@ Object.assign(exports, {
 
 exports.iteration = {
 
-    'to strings': function (n = 0) {
+    'to strings':
+    function (n = 0) {
         return n.toString(2).split('1').length - 1;
     },
 
-    'shift counting': function (n = 0, sum = 0) {
+    'shift counting':
+    function (n = 0, sum = 0) {
         do {
             if (n & 1) {
                 sum += 1;

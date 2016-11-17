@@ -3,6 +3,11 @@
 // https://leetcode.com/problems/sum-of-two-integers/
 
 
+/**
+ * @param {number} a
+ * @param {number} b
+ * @return {number}
+ */
 var getSum = exports = function (a = 0, b = 0) {
     while (a !== 0) {
         [a, b] = [(a & b) << 1, a ^ b];
@@ -30,7 +35,8 @@ Object.assign(exports, {
 
 exports.iteration = {
 
-    recursive: (function () {
+    recursive:
+    (function () {
         return function add (a = 0, b = 0) {
             if (a === 0) { return b; }
 
@@ -49,7 +55,7 @@ Object.assign(exports, {
     only: false,
 
     // to skip currnet test
-    skip: typeof TBD !== 'undefined',
+    skip: false,
 });
 
 

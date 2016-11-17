@@ -39,7 +39,8 @@ Object.assign(exports, {
 
 exports.iteration = {
 
-    brute: function (nums, target) {
+    brute:
+    function (nums, target) {
         for (let i = 0, j = 0; i < nums.length - 1; i++) {
             for (j = i + 1; j < nums.length; j++) {
                 if (nums[i] + nums[j] === target) {
@@ -49,7 +50,8 @@ exports.iteration = {
         }
     },
 
-    cache: function (nums = [], target = 0, hash = {}) {
+    cache:
+    function (nums = [], target = 0, hash = {}) {
 
         for (var n = 0; n < nums.length; n++) {
             hash[nums[n]] = n;
@@ -79,7 +81,7 @@ Object.assign(exports, {
     only: false,
 
     // to skip currnet test
-    skip: typeof TBD !== 'undefined',
+    skip: false,
 });
 
 
