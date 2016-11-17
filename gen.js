@@ -88,7 +88,7 @@ let algorithms$ = fetchObservable(vars.api.algorithms);
 
             return Object.assign(item, {
                 sid,
-                spec: `${ sid }.${ slug }.spec.js`,
+                spec: `-wip.${ sid }.${ slug }.spec.js`,
             });
         })
 
