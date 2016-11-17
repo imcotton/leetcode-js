@@ -2,7 +2,7 @@
 Leetcode scaffolding for JavaScript (ES6)
 =========================================
 
-[![Build Status](https://travis-ci.org/imcotton/leetcode-js.svg?branch=master)](https://travis-ci.org/imcotton/leetcode-js)
+[![Build Status](https://travis-ci.org/imcotton/leetcode-js.svg?branch=own)](https://travis-ci.org/imcotton/leetcode-js)
 
 
 Requirement
