@@ -5,10 +5,14 @@
 # You can specify a custom docker image from Docker Hub as your build environment.
 image: node:6.9.1
 
+clone:
+  depth: 9
+
 pipelines:
-    default:
-        - step:
-            script: # Modify the commands below to build your repository.
-                - node -v   &&   npm -v
-                - npm i -q
-                - npm -s run mocha -- -R nyan
+  default:
+    - step:
+        script: # Modify the commands below to build your repository.
+          - node -v && npm -v
+          - npm install -q
+          - npm test -- -R dot
+
