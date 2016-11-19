@@ -35,11 +35,11 @@ Object.assign(exports, {
 
 exports.iteration = {
 
-    'split reverse': function (s) {
+    'split reverse': function (s = '') {
         return s.split('').reverse().join('');
     },
 
-    'loop append': function (s) {
+    'loop append': function (s = '') {
         let list = '';
 
         for (var i = s.length - 1; i >= 0; i--) {

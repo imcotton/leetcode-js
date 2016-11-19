@@ -7,7 +7,8 @@
  * @param {number} n - a positive integer
  * @return {number}
  */
-var hammingWeight = exports = function (n = 0, sum = 0) {
+var hammingWeight = exports = function (n = 0) {
+    var sum = 0;
 
     while (n) {
         n &= n - 1;
@@ -46,7 +47,9 @@ exports.iteration = {
     },
 
     'shift counting':
-    function (n = 0, sum = 0) {
+    function (n = 0) {
+        var sum = 0;
+
         do {
             if (n & 1) {
                 sum += 1;

@@ -32,7 +32,7 @@ Object.assign(exports, {
 exports.iteration = {
 
     looping:
-    function (num) {
+    function (num = 0) {
         var dig = 0;
 
         while (num > 9) {
@@ -44,7 +44,7 @@ exports.iteration = {
     },
 
     formula:
-    function (num) {
+    function (num = 0) {
         return 1 + (num - 1) % 9;
     },
 
