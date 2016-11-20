@@ -3,6 +3,7 @@ const path = require('path');
 const file = require('fs');
 
 const { deepStrictEqual: eql } = require('assert');
+const clone = require('lodash.clonedeep');
 
 if (!Object.entries) {
     require('object.entries').shim();
@@ -39,7 +40,7 @@ file.readdirSync(vars.specs)
                     return Promise.resolve().then(_ => {
                         for (let i = 0; i < cases.length; i += 2) {
                             eql(
-                                func(...[].concat(cases[i])),
+                                func(...[].concat(clone(cases[i]))),
                                 cases[i + 1]
                             );
                         }
