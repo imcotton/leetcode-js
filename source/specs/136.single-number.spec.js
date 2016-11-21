@@ -9,9 +9,8 @@
  */
 var singleNumber = exports = function (nums = []) {
 
-    for (var i = 1, j = nums.length - 1; i < j; i += 1, j -= 1) {
-        nums[0] ^= nums[i];
-        nums[0] ^= nums[j];
+    for (var i = 1, j = nums.length - 1; i < j; i++, j--) {
+        nums[0] ^= nums[i] ^ nums[j];
     }
 
     return nums[0];
@@ -24,9 +23,9 @@ Object.assign(exports, {
     title: '136. Single Number',
 
     cases: [
-        [[1, 1, 2]],     2,
-        [[2, 1, 2]],     1,
-        [[3, 2, 2]],     3,
+        [[1, 1, 2, 3, 3]],     2,
+        [[2, 1, 2, 3, 3]],     1,
+        [[3, 2, 2, 1, 1]],     3,
     ],
 });
 
@@ -34,7 +33,7 @@ Object.assign(exports, {
 
 exports.iteration = {
 
-    xor:
+    'one point':
     function (nums = []) {
         for (var i = 1; i < nums.length; i += 1) {
             nums[0] ^= nums[i];
