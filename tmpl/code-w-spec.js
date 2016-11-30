@@ -9,18 +9,17 @@ var TBD = exports = function (a, b) {
 
 
 
-Object.assign(exports, {
+exports.title = '$[sid]. $[title]';
 
-    title: '$[sid]. $[title]',
 
-    cases: [
-        [1, 1],     2,
 
-        [2, 3],     5,
+exports.cases = [
+    [1, 1],     2,
 
-        [4, 6],     10,
-    ],
-});
+    [2, 3],     5,
+
+    [4, 6],     10,
+];
 
 
 
@@ -31,14 +30,11 @@ exports.iteration = {
 
 
 
-Object.assign(exports, {
+// run current test only
+exports.only = false;
 
-    // run current test only
-    only: false,
-
-    // to skip currnet test
-    skip: typeof TBD !== 'undefined',
-});
+// to skip currnet test
+exports.skip = typeof TBD !== 'undefined';
 
 
 
