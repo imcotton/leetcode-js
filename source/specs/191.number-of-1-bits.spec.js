@@ -20,22 +20,21 @@ var hammingWeight = exports = function (n = 0) {
 
 
 
-Object.assign(exports, {
+exports.title = '191. Number of 1 Bits';
 
-    title: '191. Number of 1 Bits',
 
-    cases: [
-                 0,    0,
-                 1,    1,
-                11,    3,
 
-            0b1001,    2,
-            0b1111,    4,
+exports.cases = [
+             0,    0,
+             1,    1,
+            11,    3,
 
-          16777216,    1,
-        2147483648,    1,
-    ],
-});
+        0b1001,    2,
+        0b1111,    4,
+
+      16777216,    1,
+    2147483648,    1,
+];
 
 
 
@@ -64,14 +63,11 @@ exports.iteration = {
 
 
 
-Object.assign(exports, {
+// run current test only
+exports.only = false;
 
-    // run current test only
-    only: false,
-
-    // to skip currnet test
-    skip: false,
-});
+// to skip currnet test
+exports.skip = false;
 
 
 

@@ -27,23 +27,22 @@ var compareVersion = exports = function (v1 = '', v2 = '') {
 
 
 
-Object.assign(exports, {
+exports.title = '165. Compare Version Numbers';
 
-    title: '165. Compare Version Numbers',
 
-    cases: [
-        ['1',      '0'],        1,
-        ['1',      '1.1'],     -1,
-        ['1.0.1',  '1'],        1,
-        ['0.1',    '1.0'],     -1,
-        ['01',     '1'],        0,
-        ['1.1',    '1.2'],     -1,
-        ['13.1',   '1.2'],      1,
-        ['1.20',   '1.17'],     1,
-        ['1.2',    '1.17'],    -1,
-        ['1.4',    '1.4'],      0,
-    ],
-});
+
+exports.cases = [
+    ['1',      '0'],        1,
+    ['1',      '1.1'],     -1,
+    ['1.0.1',  '1'],        1,
+    ['0.1',    '1.0'],     -1,
+    ['01',     '1'],        0,
+    ['1.1',    '1.2'],     -1,
+    ['13.1',   '1.2'],      1,
+    ['1.20',   '1.17'],     1,
+    ['1.2',    '1.17'],    -1,
+    ['1.4',    '1.4'],      0,
+];
 
 
 
@@ -54,14 +53,11 @@ exports.iteration = {
 
 
 
-Object.assign(exports, {
+// run current test only
+exports.only = false;
 
-    // run current test only
-    only: false,
-
-    // to skip currnet test
-    skip: false,
-});
+// to skip currnet test
+exports.skip = false;
 
 
 

@@ -27,21 +27,20 @@ var removeElement = exports = function (nums = [], val = 0) {
 
 
 
-Object.assign(exports, {
+exports.title = '027. Remove Element';
 
-    title: '027. Remove Element',
 
-    cases: [
-        [[1, 2, 3, 4], 5],    [1, 2, 3, 4],
-        [[1, 2, 3, 4], 3],    [1, 2, 4],
-        [[3, 2, 2, 3], 3],    [2, 2],
-        [[3, 3, 3, 1], 3],    [1],
-        [[1, 1, 3,  ], 3],    [1, 1],
-        [[3, 3,     ], 5],    [3, 3],
-        [[1,        ], 1],    [    ],
-        [[2,        ], 3],    [2   ],
-    ],
-});
+
+exports.cases = [
+    [[1, 2, 3, 4], 5],    [1, 2, 3, 4],
+    [[1, 2, 3, 4], 3],    [1, 2, 4],
+    [[3, 2, 2, 3], 3],    [2, 2],
+    [[3, 3, 3, 1], 3],    [1],
+    [[1, 1, 3,  ], 3],    [1, 1],
+    [[3, 3,     ], 5],    [3, 3],
+    [[1,        ], 1],    [    ],
+    [[2,        ], 3],    [2   ],
+];
 
 
 
@@ -52,14 +51,11 @@ exports.iteration = {
 
 
 
-Object.assign(exports, {
+// run current test only
+exports.only = false;
 
-    // run current test only
-    only: false,
-
-    // to skip currnet test
-    skip: false,
-});
+// to skip currnet test
+exports.skip = false;
 
 
 

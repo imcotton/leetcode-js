@@ -20,16 +20,15 @@ var reverseString = exports = function (s = '') {
 
 
 
-Object.assign(exports, {
+exports.title = '344. Reverse String';
 
-    title: '344. Reverse String',
 
-    cases: [
-          '123', '321',
-         '1234', '4321',
-        'hello', 'olleh',
-    ],
-});
+
+exports.cases = [
+      '123', '321',
+     '1234', '4321',
+    'hello', 'olleh',
+];
 
 
 
@@ -54,14 +53,11 @@ exports.iteration = {
 
 
 
-Object.assign(exports, {
+// run current test only
+exports.only = false;
 
-    // run current test only
-    only: false,
-
-    // to skip currnet test
-    skip: false,
-});
+// to skip currnet test
+exports.skip = false;
 
 
 

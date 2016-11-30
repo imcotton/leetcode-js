@@ -14,18 +14,17 @@ var addDigits = exports = function (num = 0) {
 
 
 
-Object.assign(exports, {
+exports.title = '258. Add Digits';
 
-    title: '258. Add Digits',
 
-    cases: [
-          0,     0,
-         10,     1,
-         38,     2,
-         42,     6,
-        111,     3,
-    ],
-});
+
+exports.cases = [
+      0,     0,
+     10,     1,
+     38,     2,
+     42,     6,
+    111,     3,
+];
 
 
 
@@ -53,14 +52,11 @@ exports.iteration = {
 
 
 
-Object.assign(exports, {
+// run current test only
+exports.only = false;
 
-    // run current test only
-    only: false,
-
-    // to skip currnet test
-    skip: false,
-});
+// to skip currnet test
+exports.skip = false;
 
 
 

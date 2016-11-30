@@ -22,16 +22,15 @@ var containsDuplicate = exports = function (nums = []) {
 
 
 
-Object.assign(exports, {
+exports.title = '217. Contains Duplicate';
 
-    title: '217. Contains Duplicate',
 
-    cases: [
-        [[1, 1]],              true,
-        [[2, 3]],              false,
-        [[1, 2, 4, 5, 1]],     true,
-    ],
-});
+
+exports.cases = [
+    [[1, 1]],              true,
+    [[2, 3]],              false,
+    [[1, 2, 4, 5, 1]],     true,
+];
 
 
 
@@ -56,14 +55,11 @@ exports.iteration = {
 
 
 
-Object.assign(exports, {
+// run current test only
+exports.only = false;
 
-    // run current test only
-    only: false,
-
-    // to skip currnet test
-    skip: false,
-});
+// to skip currnet test
+exports.skip = false;
 
 
 

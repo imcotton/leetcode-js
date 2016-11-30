@@ -18,16 +18,15 @@ var singleNumber = exports = function (nums = []) {
 
 
 
-Object.assign(exports, {
+exports.title = '136. Single Number';
 
-    title: '136. Single Number',
 
-    cases: [
-        [[1, 1, 2, 3, 3]],     2,
-        [[2, 1, 2, 3, 3]],     1,
-        [[3, 2, 2, 1, 1]],     3,
-    ],
-});
+
+exports.cases = [
+    [[1, 1, 2, 3, 3]],     2,
+    [[2, 1, 2, 3, 3]],     1,
+    [[3, 2, 2, 1, 1]],     3,
+];
 
 
 
@@ -46,14 +45,11 @@ exports.iteration = {
 
 
 
-Object.assign(exports, {
+// run current test only
+exports.only = false;
 
-    // run current test only
-    only: false,
-
-    // to skip currnet test
-    skip: false,
-});
+// to skip currnet test
+exports.skip = false;
 
 
 

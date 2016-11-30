@@ -25,15 +25,14 @@ var containsNearbyDuplicate = exports = function (nums = [], k = 0) {
 
 
 
-Object.assign(exports, {
+exports.title = '219. Contains Duplicate II';
 
-    title: '219. Contains Duplicate II',
 
-    cases: [
-        [[99, 99],  2],          true,
-        [[-1, -1],  1],          true,
-    ],
-});
+
+exports.cases = [
+    [[99, 99],  2],          true,
+    [[-1, -1],  1],          true,
+];
 
 
 
@@ -44,14 +43,11 @@ exports.iteration = {
 
 
 
-Object.assign(exports, {
+// run current test only
+exports.only = false;
 
-    // run current test only
-    only: false,
-
-    // to skip currnet test
-    skip: false,
-});
+// to skip currnet test
+exports.skip = false;
 
 
 

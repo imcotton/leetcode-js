@@ -18,18 +18,17 @@ var getSum = exports = function (a = 0, b = 0) {
 
 
 
-Object.assign(exports, {
+exports.title = '371. Sum of Two Integers';
 
-    title: '371. Sum of Two Integers',
 
-    cases: [
-        [1, 1],   2,
-        [1, 2],   3,
-        [4, 2],   6,
-       [-1, 1],   0,
-        [7, 5],   12,
-    ],
-});
+
+exports.cases = [
+    [1, 1],   2,
+    [1, 2],   3,
+    [4, 2],   6,
+   [-1, 1],   0,
+    [7, 5],   12,
+];
 
 
 
@@ -49,14 +48,11 @@ exports.iteration = {
 
 
 
-Object.assign(exports, {
+// run current test only
+exports.only = false;
 
-    // run current test only
-    only: false,
-
-    // to skip currnet test
-    skip: false,
-});
+// to skip currnet test
+exports.skip = false;
 
 
 

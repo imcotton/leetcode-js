@@ -30,15 +30,14 @@ var moveZeroes = exports = function (nums = []) {
 
 
 
-Object.assign(exports, {
+exports.title = '283. Move Zeroes';
 
-    title: '283. Move Zeroes',
 
-    cases: [
-        [[0, 1, 0, 3, 9]],     [1, 3, 9, 0, 0],
-        [[0, 0, 0, 0, 1]],     [1, 0, 0, 0, 0],
-    ],
-});
+
+exports.cases = [
+    [[0, 1, 0, 3, 9]],     [1, 3, 9, 0, 0],
+    [[0, 0, 0, 0, 1]],     [1, 0, 0, 0, 0],
+];
 
 
 
@@ -49,14 +48,11 @@ exports.iteration = {
 
 
 
-Object.assign(exports, {
+// run current test only
+exports.only = false;
 
-    // run current test only
-    only: false,
-
-    // to skip currnet test
-    skip: false,
-});
+// to skip currnet test
+exports.skip = false;
 
 
 

@@ -20,15 +20,14 @@ var countBits = exports = function (num = 0) {
 
 
 
-Object.assign(exports, {
+exports.title = '338. Counting Bits';
 
-    title: '338. Counting Bits',
 
-    cases: [
-        4,         [0, 1, 1, 2, 1],
-        5,         [0, 1, 1, 2, 1, 2],
-    ],
-});
+
+exports.cases = [
+    4,         [0, 1, 1, 2, 1],
+    5,         [0, 1, 1, 2, 1, 2],
+];
 
 
 
@@ -100,14 +99,11 @@ exports.iteration = {
 
 
 
-Object.assign(exports, {
+// run current test only
+exports.only = false;
 
-    // run current test only
-    only: false,
-
-    // to skip currnet test
-    skip: false,
-});
+// to skip currnet test
+exports.skip = false;
 
 
 

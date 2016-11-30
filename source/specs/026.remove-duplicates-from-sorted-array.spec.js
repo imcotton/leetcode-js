@@ -25,16 +25,15 @@ var removeDuplicates = exports = function (nums = []) {
 
 
 
-Object.assign(exports, {
+exports.title = '026. Remove Duplicates from Sorted Array';
 
-    title: '026. Remove Duplicates from Sorted Array',
 
-    cases: [
-        [[1, 2]],              [1, 2],
-        [[1, 1, 2]],           [1, 2],
-        [[1, 2, 2, 3, 4]],     [1, 2, 3, 4],
-    ],
-});
+
+exports.cases = [
+    [[1, 2]],              [1, 2],
+    [[1, 1, 2]],           [1, 2],
+    [[1, 2, 2, 3, 4]],     [1, 2, 3, 4],
+];
 
 
 
@@ -45,14 +44,11 @@ exports.iteration = {
 
 
 
-Object.assign(exports, {
+// run current test only
+exports.only = false;
 
-    // run current test only
-    only: false,
-
-    // to skip currnet test
-    skip: false,
-});
+// to skip currnet test
+exports.skip = false;
 
 
 

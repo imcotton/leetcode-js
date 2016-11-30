@@ -24,17 +24,16 @@ var twoSum = exports = function (nums = [], target = 0) {
 
 
 
-Object.assign(exports, {
+exports.title = '001. Two Sum';
 
-    title: '001. Two Sum',
 
-    cases: [
-        [[2, 7, 11, 15], 9],            [0, 1],
-        [[3, 2, 4], 6],                 [1, 2],
-        [[0, 4, 3, 0], 0],              [0, 3],
-        [[-1, -2, -3, -4, -5], -8],     [2, 4],
-    ],
-});
+
+exports.cases = [
+    [[2, 7, 11, 15], 9],            [0, 1],
+    [[3, 2, 4], 6],                 [1, 2],
+    [[0, 4, 3, 0], 0],              [0, 3],
+    [[-1, -2, -3, -4, -5], -8],     [2, 4],
+];
 
 
 
@@ -77,14 +76,11 @@ exports.iteration = {
 
 
 
-Object.assign(exports, {
+// run current test only
+exports.only = false;
 
-    // run current test only
-    only: false,
-
-    // to skip currnet test
-    skip: false,
-});
+// to skip currnet test
+exports.skip = false;
 
 
 
